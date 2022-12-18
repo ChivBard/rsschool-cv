@@ -1,0 +1,174 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+body{
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+*{
+	box-sizing: border-box;
+}
+:after{
+	margin: 0;
+}
+
+h1, h2, h3{
+	margin: 0;
+}
+
+.container{
+	width: 1400px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+/* navigation */
+.nav_wrapper{
+	background-color: #1E2939;
+	padding: 15px ;
+	margin-bottom: 50px;
+}
+.nav_list{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+.nav_link{
+	margin: 0px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: aliceblue;
+	transform: color 0.2s linear;
+	position: relative;
+}
+.nav_link:after{
+	content:"";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: #25C4A4;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.2s linear;
+}
+.nav_link:hover:after{
+	opacity: 1;
+}
+.nav_link:hover{
+	color: #25C4A4;
+}
+
+
+
+/* section */
+.main_container{
+	width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	min-height: 100%;
+}
+.block{
+	width: 50%;
+}
+.block_center{
+	display: flex;
+	align-items: center;
+}
+.title{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 42px;
+	margin-bottom:10px;
+}
+.subtitle{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-bottom:10px;
+	font-weight: 400;
+}
+
+.block_title{
+	margin: 20px 0px;
+}
+.contacts_txt{
+	font-size: 20px;
+}
+.contacts_item{
+	text-decoration: none;
+	color:black;
+	transition: color 0.2s linear;
+}
+.contacts_item:hover{
+	color: #25C4A4;
+}
+.about{
+	font-size: 18px;
+	line-height:1.5;
+}
+.skills{
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.code{
+	background-color: #aaa;
+	border-radius: 20px;
+	padding: 30px 0 15px;
+	margin: 0;
+	font-size: 20px;
+	text-align: center;
+}
+.projects{
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	transition: color 0.2s linear;
+}
+.projects:hover{
+	color: #25C4A4;
+}
+
+
+/* footer */
+ .footer_container{
+	width: 1400px;
+	margin: 0px auto;
+	background-color:#1E2939;
+	padding: 15px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+ }
+ .contacts-link-footer{
+	text-decoration: none;
+	color: aliceblue;
+	font-size: 20px;
+	transition: color 0.2s linear;
+	position: relative
+
+ }
+ .contacts-link-footer:hover{
+	color: #25C4A4;
+ }
+ .foot_text{
+	color: aliceblue;
+	padding-left: 25px;
+	font-size: 20px;
+ }
+ .rss_icon{
+	width: 120px;
+	height: 45px;
+	padding-right: 25px;
+ }
